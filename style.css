@@ -13,10 +13,11 @@ nav{
   width: 100%;
   padding: 20px;
   transition: all 0.4s ease;
+  background:#002147
 }
 nav.sticky{
   padding: 15px 20px;
-  background: #4070f4;
+  background: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 nav .nav-content{
@@ -51,7 +52,7 @@ nav.sticky .logo a{
   transition: all 0.3s ease;
 }
  .nav-links li a:hover{
-   color: #4070f4;
+   color: #087830;
  }
  nav.sticky .nav-links li a{
    color: #fff;

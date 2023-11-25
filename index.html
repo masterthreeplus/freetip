@@ -46,27 +46,24 @@
             padding: 10px;
         }
 
-        .tab {
+        .segmented-control {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .segmented-control button {
             padding: 10px 20px;
-            margin: 5px;
             color: white;
             background-color: #4CAF50; /* Green */
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            display: inline-block; /* Display tabs side by side */
             font-size: 14px;
             transition: background-color 0.3s ease; /* Smooth transition on hover */
         }
 
-        .tab:hover {
+        .segmented-control button:hover {
             background-color: #45a049; /* Darker green on hover */
-        }
-
-        @media (max-width: 600px) {
-            .tab {
-                width: 100%; /* Full width for smaller screens */
-            }
         }
     </style>
 </head>
@@ -112,9 +109,9 @@
     <!-- Add more content to make the body scrollable -->
     <div style="height: 1000px;"></div>
 
-    <div id="bottomnav">
-        <button class="tab" onclick="changePage('free')">Free</button>
-        <button class="tab" onclick="changePage('vip')">VIP</button>
+    <div id="bottomnav" class="segmented-control">
+        <button onclick="changePage('free')">Free</button>
+        <button onclick="changePage('vip')">VIP</button>
     </div>
 
     <script>

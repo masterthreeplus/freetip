@@ -44,15 +44,12 @@
             background-color: #222; /* Darker background color for bottom navigation */
             text-align: center;
             padding: 10px;
-        }
-
-        .segmented-control {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-around; /* Distribute space evenly between the buttons */
         }
 
         .segmented-control button {
-            padding: 10px 20px;
+            padding: 10px;
             color: white;
             background-color: #4CAF50; /* Green */
             border: none;
@@ -60,6 +57,8 @@
             cursor: pointer;
             font-size: 14px;
             transition: background-color 0.3s ease; /* Smooth transition on hover */
+            flex-grow: 1; /* Allow the button to grow and fill available space */
+            margin: 0 5px; /* Add some margin between buttons for spacing */
         }
 
         .segmented-control button:hover {
@@ -110,18 +109,18 @@
     <div style="height: 1000px;"></div>
 
     <div id="bottomnav" class="segmented-control">
-        <button onclick="changePage('free')">Free</button>
-        <button onclick="changePage('vip')">VIP</button>
+        <button onclick="changePage('today')">Today</button>
+        <button onclick="changePage('yesterday')">Yesterday</button>
     </div>
 
     <script>
         function changePage(page) {
-            if (page === 'free') {
-                // Change the page to the free content (you can customize this)
-                alert('Switching to Free Page');
-            } else if (page === 'vip') {
-                // Change the page to the VIP content (you can customize this)
-                alert('Switching to VIP Page');
+            if (page === 'today') {
+                // Change the page to today's content (you can customize this)
+                alert('Switching to Today\'s Page');
+            } else if (page === 'yesterday') {
+                // Change the page to yesterday's content (you can customize this)
+                alert('Switching to Yesterday\'s Page');
             }
         }
     </script>

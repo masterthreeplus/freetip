@@ -88,9 +88,21 @@
     </table>
 
     <div id="bottomnav">
-        <button>Free</button>
-        <button>VIP</button>
+        <button onclick="changePage('free')">Free</button>
+        <button onclick="changePage('vip')">VIP</button>
     </div>
+
+    <script>
+        function changePage(page) {
+            if (page === 'free') {
+                // Change the page to the free content (you can customize this)
+                alert('Switching to Free Page');
+            } else if (page === 'vip') {
+                // Change the page to the VIP content (you can customize this)
+                alert('Switching to VIP Page');
+            }
+        }
+    </script>
 
 </body>
 </html>

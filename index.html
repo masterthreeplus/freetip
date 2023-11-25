@@ -46,24 +46,25 @@
             padding: 10px;
         }
 
-        #bottomnav button {
-            padding: 8px; /* Adjusted padding for smaller buttons */
+        .tab {
+            padding: 10px 20px;
             margin: 5px;
             color: white;
             background-color: #4CAF50; /* Green */
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            display: inline-block; /* Display buttons side by side */
-            font-size: 14px; /* Adjusted font size for smaller buttons */
+            display: inline-block; /* Display tabs side by side */
+            font-size: 14px;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
         }
 
-        #bottomnav button:hover {
-            background-color: #45a049;
+        .tab:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
 
         @media (max-width: 600px) {
-            #bottomnav button {
+            .tab {
                 width: 100%; /* Full width for smaller screens */
             }
         }
@@ -112,8 +113,8 @@
     <div style="height: 1000px;"></div>
 
     <div id="bottomnav">
-        <button onclick="changePage('free')">Free</button>
-        <button onclick="changePage('vip')">VIP</button>
+        <button class="tab" onclick="changePage('free')">Free</button>
+        <button class="tab" onclick="changePage('vip')">VIP</button>
     </div>
 
     <script>

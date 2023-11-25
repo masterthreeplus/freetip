@@ -53,10 +53,17 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            width: 48%; /* Adjusted width for responsiveness */
         }
 
         #bottomnav button:hover {
             background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            #bottomnav button {
+                width: 100%; /* Full width for smaller screens */
+            }
         }
     </style>
 </head>

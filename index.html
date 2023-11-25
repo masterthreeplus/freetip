@@ -1,54 +1,87 @@
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title> Master Three Plus </title>
-    <link rel="stylesheet" href="style.css">
-   </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #topbar {
+            background-color: blue;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        #bottomnav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #bottomnav button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
 <body>
-  <nav>
-    <div class="nav-content">
-      <div class="logo">
-        <a href="#">Master Three Plus</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">FREE</a></li>
-        <li><a href="#">VIP</a></li>
-        <li><a href="#">About</a></li>
-        </ul>
+
+    <div id="topbar">
+        <h2>Top Bar</h2>
     </div>
-  </nav>
-  <section class="home"></section>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Match</th>
+                <th>Team</th>
+                <th>Odd</th>
+                <th>Tip</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Add your table data here -->
+            <tr>
+                <td>2023-11-25</td>
+                <td>Sample Match</td>
+                <td>Team A vs Team B</td>
+                <td>2.0</td>
+                <td>Team A</td>
+                <td>Win</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+    <div id="bottomnav">
+        <button>Free</button>
+        <button>VIP</button>
+    </div>
 
 </body>
-
-
-  <!-- Footer -->
-  <footer class="text-center text-white" style="background-color: #0a4275;">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: CTA -->
-      <section class="">
-        <p class="d-flex justify-content-center align-items-center">
-          <span class="me-3">Contact me for VIP Tips</span>
-          <button type="button" class="btn btn-outline-light btn-rounded">
-            Contact Me
-          </button>
-        </p>
-      </section>
-      <!-- Section: CTA -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2023 Copyright:
-      <a class="text-white" href="https://masterthreeplus.xyz">masterthreeplus.xyz</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
- 
- <!-- Footer -->
-  
 </html>
